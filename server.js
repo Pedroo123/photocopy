@@ -3,7 +3,7 @@
  * Descrição: 
  * Author: Andre Gros
  * Data de criação: 26/08/2017
- */
+*/
 
 // Configurar o Setup da App:
 
