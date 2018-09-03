@@ -8,9 +8,14 @@
 // Configurar o Setup da App:
 
 //Chamada dos pacotes
-var express = require('express')
+var express = require('express');
 var app = express();
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+var Teacher = require('./app/models/teacher');
+
+//mongoDB local
+mongoose.conect('mongodb://localhost/photocopy');
 
 //Configuração da variavel app para usar o body-parse()
 app.use(bodyParser.urlencoded({ extended: true }));
