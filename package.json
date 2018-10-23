@@ -4,7 +4,7 @@
   "description": "Project photocopy",
   "main": "Server.js",
   "scripts": {
-    "test": "./node_modules/ .bin/mocha --report spec"
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
     "request": "^2.88.0"
   },
   "author": "Andre Gros",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
 }

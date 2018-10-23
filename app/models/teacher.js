@@ -1,6 +1,6 @@
 /**
  * Arquivo: server.js
- * Descrição: Modulo de orofessores
+ * Descrição: Modulo de professores
  * Author: Andre Gros
  * Data de criação: 29/08/2017
 */
@@ -8,9 +8,9 @@
 let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
-let TeacherSchema = new Schema({
-    matriculation: number,
-    name: string
+let teacherSchema = new Schema({
+    matriculation: Number,
+    name: String
 });
 
-module.exports = mongoose.model('Teacher', TeachSchema);
+module.exports = mongoose.model('Teacher', teacherSchema);
