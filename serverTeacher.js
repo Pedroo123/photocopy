@@ -17,15 +17,14 @@ var Teacher = require('./app/models/teacher');
 mongoose.Promise = global.Promise;
 
 //mongoDB local
-mongoose.conect('mongodb://localhost:27017/photocopy', {
-    useMongoClient:true
-});
+//mongoose.conect('mongodb://localhost:27017/photocopy', {
+//    useMongoClient:true
+//});
 
-/** MLAB
-* mongoose.connect('mongodb://gros:gros@teste.mlab.com:62448/photocopy', {
-*     useMongoClient: true
-* });-iko
-**/
+// MLAB
+mongoose.connect('mongodb://<gros>:<mongodb123>@ds031088.mlab.com:31088/teacher',{
+    useNewUrlParser: true
+});
 
 //Configuração da variavel app para usar o body-parse()
 app.use(bodyParser.urlencoded({ extended: true }));
