@@ -56,7 +56,7 @@ router.route('/teacher')
         });
     })
 
-router.route('teacher/:teacher_id')
+router.route('/teacher/:teacher_id')
     
     .get(function (req, res){
         Teacher.findById(req.params.teacher_id, function(error, teacher){
@@ -94,7 +94,6 @@ router.route('teacher/:teacher_id')
                 res.json({ message: 'Professor excluido com sucesso! ' });
             });
         });
-
 //Definindo um padrão das rotas prefixadas: /api
 app.use('/api', router);
 
