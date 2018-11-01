@@ -1,16 +1,16 @@
-/**
- * Arquivo: server.js
- * Descrição: Modulo de professores
- * Author: Andre Gros
- * Data de criação: 29/08/2017
-*/
-
 let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let teacherSchema = new Schema({
-    matriculation: Number,
-    name: String
+    matriculation: {
+        type: Number
+    },
+    name: {
+        type: String,
+        minlength: 1,
+        maxlength: 80,
+        required: true
+    }
 });
 
-module.exports = mongoose.model('teacher', teacherSchema);
+module.exports = mongoose.model('Teacher', teacherSchema);
