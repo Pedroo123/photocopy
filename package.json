@@ -2,7 +2,7 @@
   "name": "photocopy",
   "version": "1.0.0",
   "description": "Project photocopy",
-  "main": "serverTeacher.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon"
   },

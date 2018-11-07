@@ -10,14 +10,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://gros:mongo123@ds031088.mlab.com:31088/teacher',{ useNewUrlParser: true });
+mongoose.connect('mongodb://gros:mongo123@ds045077.mlab.com:45077/projectphotocopy',{ useNewUrlParser: true });
 
 router.use(function(req, res, next){
     console.log('Algo esta acontecendo aqui...');
     next();
 });
 
-router.route('/teacher')
+router.route('/teachers')
 
     .post(function(req, res){
         let teacher = new Teacher();
@@ -43,7 +43,7 @@ router.route('/teacher')
         });
     })
 
-router.route('/teacher/:teacher_id')
+router.route('/teachers/:teacher_id')
     
     .get(function (req, res){
         Teacher.findById(req.params.teacher_id, function(error, teacher){

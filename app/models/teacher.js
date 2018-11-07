@@ -3,7 +3,8 @@ let Schema = mongoose.Schema;
 
 let teacherSchema = new Schema({
     matriculation: {
-        type: Number
+        type: Number,
+        required: true
     },
     name: {
         type: String,
