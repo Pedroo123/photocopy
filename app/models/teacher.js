@@ -4,6 +4,7 @@ let Schema = mongoose.Schema;
 let teacherSchema = new Schema({
     matriculation: {
         type: Number,
+        min: 0,
         required: true
     },
     name: {
