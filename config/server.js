@@ -8,7 +8,6 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-//app.use('/api', router);
 app.listen(port, function() {
     console.log("Aplicação sendo iniciada na porta " + port);
 })
