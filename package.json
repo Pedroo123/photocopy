@@ -2,7 +2,7 @@
   "name": "photocopy",
   "version": "1.0.0",
   "description": "Project photocopy",
-  "main": "server.js",
+  "main": "src/app.js",
   "scripts": {
     "dev": "nodemon"
   },
@@ -13,6 +13,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "http-status": "^1.3.1",
     "mongoose": "^5.4.16",
     "request": "^2.88.0",
     "uuid": "^3.3.2",
