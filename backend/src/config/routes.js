@@ -41,10 +41,11 @@ module.exports = function (server) {
 
         .get(function (req, res){
             Teacher.findById(req.params.teacher_id, function(error, teacher){
-                if(error || teacher == null)
+                if(error || teacher == null) {
                     res.send(404, 'Professor não encontrado.');
-
-                res.json(teacher);
+                } else {
+                    res.json(teacher);
+                }
             })
         })
 
